@@ -1,0 +1,33 @@
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.iml
+
+# Local caches
+.npm-cache/
+.local-git-backups/
+
+# Node / UniApp
+node_modules/
+food-wexin/node_modules/
+food-wexin/unpackage/
+food-wexin/.hbuilderx/
+food-wexin/project.private.config.json
+
+# Java / Maven
+Food-system2/target/
+Food-system2/.mvn/wrapper/maven-wrapper.jar
+*.class
+
+# Runtime secrets and local config
+.env
+.env.*
+!.env.example
+application-local.properties
+Food-system2/src/main/resources/application-local.properties
+
+# Logs
+*.log
+logs/

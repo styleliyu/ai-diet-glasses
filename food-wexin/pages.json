@@ -1,0 +1,250 @@
+{
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "进入首页",
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/login/login",
+      "style": {
+        "navigationBarTitleText": "登录",
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/home/home",
+      "style": {
+        "navigationBarTitleText": "首页",
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": true,
+        "backgroundColor": "#f9f9f9"
+      }
+    },
+    {
+      "path": "pages/food-recognition/recognition",
+      "style": {
+        "navigationBarTitleText": "食物识别",
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/reports/reports",
+      "style": {
+        "navigationBarTitleText": "饮食报告",
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/setting/devices",
+      "style": {
+        "navigationBarTitleText": "设备管理",
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/setting/profile",
+      "style": {
+        "navigationBarTitleText": "个人中心",
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": false
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "饮食助手",
+    "navigationBarBackgroundColor": "#07c160",
+    "backgroundColor": "#f9f9f9",
+    "backgroundColorTop": "#f9f9f9",
+    "backgroundColorBottom": "#f9f9f9",
+    "app-plus": {
+      "titleView": false
+    }
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#07c160",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "static/tabbar/home.png",
+        "selectedIconPath": "static/tabbar/home-active.png"
+      },
+      {
+        "pagePath": "pages/food-recognition/recognition",
+        "text": "识别",
+        "iconPath": "static/tabbar/recognition.png",
+        "selectedIconPath": "static/tabbar/recognition-active.png"
+      },
+      {
+        "pagePath": "pages/setting/devices",
+        "text": "设备",
+        "iconPath": "static/tabbar/devices.png",
+        "selectedIconPath": "static/tabbar/devices-active.png"
+      },
+      {
+        "pagePath": "pages/reports/reports",
+        "text": "报告",
+        "iconPath": "static/tabbar/reports.png",
+        "selectedIconPath": "static/tabbar/reports-active.png"
+      },
+      {
+        "pagePath": "pages/setting/profile",
+        "text": "我的",
+        "iconPath": "static/tabbar/profile.png",
+        "selectedIconPath": "static/tabbar/profile-active.png"
+      }
+    ]
+  },
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^ai-assistant$": "@/components/AiAssistant.vue",
+      "^@/components/(.*)": "@/components/$1.vue",
+      "^@/pages/(.*)": "@/pages/$1.vue",
+      "^@/api/(.*)": "@/api/$1.js",
+      "^@/utils/(.*)": "@/utils/$1.js",
+      "^@/store/(.*)": "@/store/$1.ts"
+    }
+  },
+  "subPackages": [
+    {
+      "root": "subpackages/auth",
+      "pages": [
+        {
+          "path": "resiger/resiger",
+          "style": {
+            "navigationBarTitleText": "注册",
+            "navigationStyle": "custom",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "onboarding/welcome",
+          "style": {
+            "navigationBarTitleText": "首次资料问答",
+            "navigationStyle": "custom",
+            "enablePullDownRefresh": false
+          }
+        }
+      ]
+    },
+    {
+      "root": "subpackages/settings",
+      "pages": [
+        {
+          "path": "target/target",
+          "style": {
+            "navigationBarTitleText": "目标设置",
+            "navigationStyle": "custom",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "nutrition/nutrition",
+          "style": {
+            "navigationBarTitleText": "营养目标",
+            "navigationStyle": "custom",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "account/account",
+          "style": {
+            "navigationBarTitleText": "账户信息",
+            "navigationStyle": "custom",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "security/security",
+          "style": {
+            "navigationBarTitleText": "安全设置",
+            "navigationStyle": "custom",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "notification/notification",
+          "style": {
+            "navigationBarTitleText": "通知设置",
+            "navigationStyle": "custom",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "preferences/preferences",
+          "style": {
+            "navigationBarTitleText": "饮食偏好",
+            "navigationStyle": "custom",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "allergies/allergies",
+          "style": {
+            "navigationBarTitleText": "过敏与禁忌",
+            "navigationStyle": "custom",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "about/about",
+          "style": {
+            "navigationBarTitleText": "关于应用",
+            "navigationStyle": "custom",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "help/help",
+          "style": {
+            "navigationBarTitleText": "帮助与反馈",
+            "navigationStyle": "custom",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "feedback/feedback",
+          "style": {
+            "navigationBarTitleText": "意见反馈",
+            "navigationStyle": "custom",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "privacy/privacy",
+          "style": {
+            "navigationBarTitleText": "隐私政策",
+            "navigationStyle": "custom",
+            "enablePullDownRefresh": false
+          }
+        }
+      ]
+    },
+    {
+      "root": "subpackages/history",
+      "pages": [
+        {
+          "path": "searchAll/searchAll",
+          "style": {
+            "navigationBarTitleText": "记录查询",
+            "navigationStyle": "custom",
+            "enablePullDownRefresh": false
+          }
+        }
+      ]
+    }
+  ]
+}
